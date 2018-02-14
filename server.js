@@ -1,11 +1,20 @@
 var express = require('express');
 var app = express();
-
+var session = require('express-session');
 var passport = require('passport');
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 var config = require('./config');
 
-var googleProfile = {};
+var googleProfile = {}; // necessary when storing profiles
+
+app.use(session({
+  secret: 'something',
+  resave: false,
+  saveUninitialized: true,
+  cookie: {
+    secure: false,
+  },
+}));
 
 passport.serializeUser(function (user, done) {
     done(null, user);
@@ -48,10 +57,8 @@ app.get('/',
 
 app.get('/logged',
   function (req, res) {
-    res.render('logged', { user: googleProfile });
+    res.render('logged', { user: req.user });
 
-    //  { user: googleProfile }
-    // { user: req.user }
   });
 
 app.get('/logout',

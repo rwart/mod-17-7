@@ -6,9 +6,10 @@ Before using passport-google-oauth20, you must register an application with Goog
 
 ### Useful links
 
-https://github.com/jaredhanson/passport-google-oauth2
-http://www.passportjs.org
-https://pugjs.org
+http://toon.io/understanding-passportjs-authentication-flow/  
+https://codeforgeek.com/2014/09/manage-session-using-node-js-express-4/  
+http://www.passportjs.org  
+https://pugjs.org  
 
 ### How to use this project
 

@@ -1,0 +1,25 @@
+header
+  nav.container
+    img(src=src="https://images.pexels.com/photos/45164/mare-animal-nature-ride-45164.jpeg?h=30&auto=compress&cs=tinysrgb" alt="place holder")
+    ul
+      li
+        a(href="/") HOME
+      li
+        a(href="/") PAGES        
+      li
+        a(href="/") FEATURE    
+      li
+        a(href="/") SERVICES
+      li
+        a(href="/") BLOG        
+      li
+        a(href="/") CONTACT
+      li
+        if(user)
+          a(href="/logout") LOG OUT
+        else  
+          a(href="/auth/google") LOG IN
+      if(user)
+        li.user-name #{user.displayName}
+          
+          

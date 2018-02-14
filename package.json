@@ -1,0 +1,29 @@
+{
+  "name": "mod-17-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "debugger": "nodemon --inspect-brk server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwart/mod-17-7.git"
+  },
+  "author": "rwart",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rwart/mod-17-7/issues"
+  },
+  "homepage": "https://github.com/rwart/mod-17-7#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}

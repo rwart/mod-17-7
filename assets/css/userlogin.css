@@ -1,0 +1,20 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  background: #CCC;
+}
+
+@media (min-width: 768px) {
+  main {
+    height: calc(100vh - 50px - 159px);
+  }
+}
+
+main p {
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+}

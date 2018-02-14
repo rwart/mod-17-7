@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    include ./head.pug
+    link(rel="stylesheet" type="text/css" href="/css/userlogin.css")
+  body
+    include ./header.pug
+    main
+      if(user)
+        p.
+         Thank you for logining in our system. 
+         You logged as <strong>#{user.displayName} (#{user.id})</strong>.
+    include ./footer.html

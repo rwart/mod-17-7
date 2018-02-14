@@ -1,0 +1,33 @@
+{
+  "libs": [
+    "browser"
+  ],
+  "plugins": {
+    "complete_strings": {},
+    "doc_comment": {
+      "fullDocs": true,
+      "strong": false
+    },
+    "node": {
+      "dontLoad": "",
+      "load": "",
+      "modules": ""
+    },
+    "node_resolve": {},
+    "modules": {
+      "dontLoad": "",
+      "load": "",
+      "modules": ""
+    },
+    "es_modules": {},
+    "commonjs": {},
+    "requirejs": {
+      "baseURL": "",
+      "paths": "",
+      "override": ""
+    }
+  },
+  "ecmaVersion": "6",
+  "loadEagerly": [],
+  "dontLoad": []
+}
